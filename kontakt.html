@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kontakt | Landi</title>
+        <link rel="stylesheet" type="text/css" href="projekat.css">
+        <link rel="icon" type="image/x-icon" href="slike/Ikona.png">
+        <script src="kontakt.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="nav">
+                <a href="pocetna.html"><img src="slike/logo.png" id="logo" class="logo"></a> <br>
+                <ul>
+                    <li class="van"><a href="pocetna.html">Pocetna stranica</a></li>
+                    <li class="van"><a href="proizvodi.html">Proizvodi</a></li>
+                    <li class="van"><a class="active" href="kontakt.html">Kontakt</a></li>
+                    <li class="van"><a href="oKompaniji.html">O kompaniji</a></li>
+                    <li class="van"><a href="oNama.html">O nama</a></li>
+                    <li class="van"><a href="karijere.html">Karijere</a></li>
+                    <li class="van"><a href="demo.html">Demo</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <br><hr class="solid">
+        
+        <main>
+        <h1 class="he" id="he">KONTAKTIRAJTE NAS</h1> <br> <br>
+
+    <div class="karijere"> 
+
+        <div id="error_message"></div>
+
+    <form id="myform" onsubmit="return validacija()" method="get" action="/">
+        
+            <div class="labelkon">
+                <label class="kontakt-label" for="name"><p>Unesite ime*</p></label><br>
+            </div>
+            <input id="name" class="kontakt-input" type="text" name="name" placeholder="Ime">
+
+            <div class="labelkon">
+                <label class="kontakt-label" for="surname"><p>Unesite prezime*</p></label><br>
+            </div>
+            <input id="surname" class="kontakt-input" type="text" name="surname" placeholder="Prezime">
+
+            <div class="labelkon">
+                <label class="kontakt-label"  for="telefon"><p>Unesite telefon*</p></label><br>
+            </div>
+            <input id="phone" class="kontakt-input" type="text" placeholder="Broj Telefona">
+
+            <div class="labelkon">
+                <label class="kontakt-label" for=""><p>Unesite naslov poruke</p></label><br>
+            </div>
+            <input id="subject" class="kontakt-input" type="text" placeholder="Naslov Poruke"><br>
+
+            <div class="labelkon">
+                <label class="kontakt-label" for=""><p>Izaberite tip poruke*</p></label>
+            </div><br>
+                <div class="kontakt-tip">
+                    <select class="kontakt-tip" name="tipPoruke">
+                        <option value="pitanje">Pitanje</option>
+                        <option value="predlog">Predlog</option>
+                        <option value="primedba">Primedba</option>
+                        <option value="drugo" selected>Drugo</option>
+                    </select>
+                </div><br>
+
+
+            <label class="kontakt-label" for="poruka"><p>Unesite poruku*</p></label> <br>
+            <textarea id="message" class="kontakt-area" cols="30" rows="10" placeholder="Poruka"></textarea> <br>
+
+                <div class="btn">
+                    <input type="submit" value="Posalji">
+                </div>
+
+         </form>
+        </div>
+   
+    <center>
+        <div class="posetite">
+            <label ><h3>Posetite nas.</h3></label> <br>
+        </div>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707.389636980939!2d20.454599329190277!3d44.83055734979835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6530da697d59%3A0xd2bdfbf9d4b80259!2sMetropolitan%20University!5e0!3m2!1sen!2srs!4v1652570947655!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </center>
+    </main>
+
+    </body>
+
+    
+        <br><hr class="solid">
+        <footer>
+            <a href="pocetna.html"><img src="slike/logo.png" class="logof" onmouseover="this.src='slike/logopink.png'"
+                onmouseout="this.src='slike/logo.png'"></a>
+                <p class="ime">Lidija Dubovac 5140</p><br>
+            <div class="footer">
+                <img style="display:inline-block;vertical-align:top;" src="slike/ikona-mape.jpg" class="ikona-mape">
+                <a href="https://goo.gl/maps/JKmvWhqBTn6WQWW6A">Tadeuša Košćuška 63, Beograd 11158</a><br>
+                <img src="slike/phone-icon.png" class="ikona-telefon">
+                <a href="tel:+381611101010">+381611101010</a><br>
+                <img src="slike/mail-icon.png" class="ikona-mail">
+                <a href="mailto:lidija.dubovac.5140@metropolitan.ac.rs">lidija.dubovac.5140@metropolitan.ac.rs</a> <br>
+                <img src="slike/instagram-icon.png" class="ikona-insta">
+                <a href="https://www.instagram.com/univerzitet_metropolitan/">Instagram</a>  
+            </div>
+        </footer>
+    
+</html>
